@@ -1,0 +1,38 @@
+.tubelightText{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Bungee Outline', cursive;
+
+    h2{
+        position: relative;
+        font-size: 3em;
+        letter-spacing:9px;
+        color: $tubelight-text;
+        text-transform: uppercase;
+        width: 70vw;
+        text-align:center;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+        line-height: 0.70em;
+        outline:none;
+        animation: animate 5s linear infinite;
+
+    }
+}
+
+@keyframes animate
+ {
+0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+    color: $tubelight-text;
+    text-shadow: none;
+}
+18.1%,20.1%,30%,50%,60.1%,80.1%,90%,92.1%,100%{
+    color: #fff;
+    text-shadow:0 0 10px #487eb0,
+    0 0 20px #487eb0,
+    0 0 40px #487eb0,
+    0 0 80px #487eb0,
+    0 0 160px #487eb0;
+}
+
+}

@@ -1,0 +1,17 @@
+@import '_base';
+@import "_sharedClasses";
+@import "_searchEntry";
+@import "_searchResults";
+@import "_animations";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+    background-color: transparent !important;
+}

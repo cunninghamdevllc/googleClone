@@ -11,53 +11,66 @@
     <!--Fontawesome CDN-->
     <script src="https://kit.fontawesome.com/0ce3de349f.js" crossorigin="anonymous"></script>
 
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/style.min.css">
+<script src="./js/main.js" type="module"></script>
     <title>Google Clone</title>
   </head>
   <body>
     <!--Navbar link to other projects-->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Carousel</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item active">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </header>
     
     
-    <main>
-        <h1 class="offscreen">
-            Find It Yourself! : <br> <small>A Wikipedia Powered Search Engine</small>
-        </h1>
+    
+    <main >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svgBack fixed-bottom"><path fill="rgba(72, 126, 176,0.3)" fill-opacity="1" d="M0,128L120,96L240,0L360,64L480,320L600,32L720,160L840,288L960,256L1080,64L1200,64L1320,256L1440,256L1440,320L1320,320L1200,320L1080,320L960,320L840,320L720,320L600,320L480,320L360,320L240,320L120,320L0,320Z"></path></svg>
+        <div class="priority">
+          
         <section class="searchEntry">
-          <h2 class="offscreen">Search Term Entry</h2>
-          <div class="logo" aria-hidden="true">
-            Logo
+         
+          
+        <div class="container">
+          <div class="tubelightText">
+            <h2>searchlite</h2>
           </div>
+        </div>
           <!--id for JS selectors and class for CSS-->
-            <form id="searchBar" class="searchBar"></form>
+            <form id="searchBar" class="searchBar">
+              
+
+              <input type="text" class="form-control" id="search" placeholder="Enter Search Term..." for="search" >
+              
+              <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="clear search terms">
+                <i class="far fa-window-close fa-2x"></i>
+              </div>
+              <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button">
+                <i class="fab fa-searchengin fa-2x blue"></i>
+              </button>
+            </form>
         </section>
+        
+        <section class="glassResults m-auto pt-4">
+          
+          <div class="statsBar">
+            <div id="stats" class="stats" aria-live="assertive"></div>
+          </div>
+          <div class="container row d-flex justify-content-center align-items-center w-100" id="searchResults">
+            
+          </div>
+        </section>
+        </div>
     </main>
-    
+    <footer>
+      <p class="lead">
+        <span aria-hidden="true">&lt;&lt;</span> 
+        Powered by <a href="https://wikipedia.org" target="_blank">Wikipedia</a>
+        <span aria-hidden="true">&gt;&gt;</span>
+      </p>
+     
+    </footer>
     
     
     

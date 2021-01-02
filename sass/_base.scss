@@ -1,0 +1,87 @@
+$search-bar-border: #e6e6e6;
+$stats-color: #70757a;
+$clear-button-color: #d9d9d9;
+$background-color:#192a56;
+$font-color: #000;
+$logo-blue: #4885ed;
+$logo-red: #db3236;
+$logo-yellow: #ffc107;
+$logo-green: #3cba54;
+$link-color: #1a0dab;
+$link-visited-color: #609;
+$link-outline-color: #000;
+$font-stack: "Roboto", Arial, sans-serif;
+$tubelight-text: #40739e;
+
+%flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  @mixin flexColumn {
+    @extend %flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  @mixin flexCenter {
+    @extend %flex;
+    justify-content: center;
+  }
+  
+  
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    background-color: $background-color;
+    color: $font-color;
+    width: calc(100%-30px);
+    min-height: 100vh;
+    font-family: $font-stack;
+    font-size: 22px;
+    padding-bottom: 3rem;
+    overflow-x:hidden;
+  }
+  
+  main {
+   
+    min-height: calc(100vh - 60px);
+    background-color: $background-color;
+  }
+  
+  footer {
+    width: 100%;
+    height: 30px;
+    @include flexCenter;
+  
+    p {
+      color: $stats-color;
+      font-size: 0.5rem;
+     
+  
+      a {
+        color: $stats-color;
+      }
+    }
+  }
+  
+  img {
+    display: block;
+    height:100%;
+  }
+
+  .svgBack{
+    
+    z-index:4;
+    
+  }
+  .priority{
+    position: relative;
+    z-index:5;
+  }
